@@ -1,0 +1,2 @@
+playwright>=1.30  # Güncel bir versiyon kullanın
+requests>=2.25

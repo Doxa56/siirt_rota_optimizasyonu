@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siirt Rota Optimizasyonu V3 (Playwright Entegrasyonlu)</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id='map'></div>
+    <div id="sidebar">
+        <h3>Siirt Teslimat Rota Optimizasyonu</h3>
+        <p><small>Mapbox & Playwright Entegrasyonu</small></p>
+        <button id="generate-points-btn">Rastgele Noktaları Göster</button>
+        <button id="calculate-route-btn" disabled>En Kısa Yolu Hesapla ve Kaydet</button>
+        <div id="route-info"></div>
+        <div class="loading" id="loading-indicator">İşlem yapılıyor...</div>
+        <h4>Uğranacak Adresler:</h4>
+        <ol id="locations-list"></ol>
+        <div id="status-message" class="status-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
